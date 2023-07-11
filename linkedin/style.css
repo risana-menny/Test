@@ -1,0 +1,60 @@
+h1{
+    font-size: larger;
+    font-family: 'Oxygen', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'Poppins', sans-serif;
+font-size: 50px;
+font-weight: 600px;
+   
+}
+a{
+    text-decoration: none;
+}
+.dd{
+    display: flex;
+    justify-content: flex-end;
+   background: transparent;
+    
+}
+.ss{
+    background: transparent;
+    border: none;
+}
+.sin{
+    border-radius: 25px;
+    border-color: blue;
+    color: blue;
+}
+.rr{
+   margin-left: 50px;
+}
+.in{
+    border-radius: 500px;
+}
+input{
+    height: 45px;
+    width: 400px;
+}
+    #btn{
+    background-color: rgb(105, 105, 240);
+    color: white;
+}
+h3{
+    margin-left: 100px;
+}
+.kk{
+    background-image: url(linkendin.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
+    /* margin-left: 48px; */
+    height: 100vh;
+    width: 100vw;
+   
+}
+.ww{
+    height: 70px;
+    margin-left: 45px;
+ 
+
+}

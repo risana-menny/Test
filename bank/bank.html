@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>div{
+      width: 300px;
+      height: 300px;
+      text-align: center;
+  }</style>
+</head>
+<body>
+    <body>
+        <script>
+
+
+function depositAmount() {
+    var amount = parseFloat(document.getElementById("depositInput").value);
+    var balance = parseFloat(document.getElementById("balanceAmount").innerHTML);
+    var newBalance = balance + amount;
+  
+    document.getElementById("balanceAmount").innerHTML = newBalance.toFixed(2);
+    document.getElementById("depositInput").value = "";
+    alert("amount deposited")
+  }
+
+  
+  function withdrawAmount() {
+    var amount = parseFloat(document.getElementById("withdrawInput").value);
+    var balance = parseFloat(document.getElementById("balanceAmount").innerHTML);
+    if (balance >= amount) {
+      var newBalance = balance - amount;
+      document.getElementById("balanceAmount").innerHTML = newBalance.toFixed(2);
+    } else {
+      alert("Insufficient balance!");
+    }
+    document.getElementById("withdrawInput").value = "";
+    alert("succesfully withdrawn")
+  }
+          
+          </script>
+
+
+
+
+       <div style="border: 1px black solid ">
+        <h3>BANK ACCOUNT</h3>
+        
+        <h4>Deposit</h4>
+        <input type="number" id="depositInput" , class="t1">
+        <button onclick="depositAmount()", class="b2" >Deposit</button>
+      
+        <h4>Withdraw</h4>
+        <input type="number" id="withdrawInput" , class="t1">
+        <button onclick="withdrawAmount()", class="b1"> Withdraw</button>
+      
+      <br><br>
+        
+        <button onclick="alert('Your balance is ' + document.getElementById('balanceAmount').innerHTML)", class=b3 >Show Balance</button> 
+        <p id="balanceAmount">0</p>
+   
+   </div>
+</body>
+</html>
